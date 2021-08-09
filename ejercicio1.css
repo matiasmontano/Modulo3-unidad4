@@ -1,0 +1,56 @@
+#rojo{
+    
+    height: 33.33%;
+    width: 33.33%;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#azul{
+   
+    height: 33.33%;
+    width: 33.33%;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verde{
+   
+    height: 33.33%;
+    width: 33.33%;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrado {
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    background: grey;
+}
+
+.cuadrado.rojo {
+    background: red;
+}
+
+.cuadrado.azul {
+    background:blue;
+}
+
+.cuadrado.verde {
+    background:green;
+}
+

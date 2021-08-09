@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio1.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+    <div class="cuadrado"></div>
+    <p>
+        <div class="boton" id= "rojo">Rojo</div>
+        <div class="boton" id= "azul">Azul</div>
+        <div class="boton" id= "verde">Verde</div>
+        <button class="boton" id="reset">Default</button>
+    </p>
+        <script>
+    
+            var cuadrado = document.getElementsByClassName('cuadrado')[0];
+            var rojo = document.getElementById('rojo');
+            var verde = document.getElementById('verde');
+            var azul = document.getElementById('azul');
+            var reset = document.getElementById('reset');
+            
+           
+            rojo.addEventListener('click', function() {
+                cuadrado.classList.add('rojo');
+            });
+    
+            verde.addEventListener('click', function () {
+                cuadrado.classList.add('verde');
+            });
+
+            azul.addEventListener('click', function () {
+                cuadrado.classList.add('azul');
+            });
+    
+            reset.addEventListener('click', function () {
+                cuadrado.classList.remove('rojo', 'verde', 'azul');
+            });
+        </script>
+     
+</body>
+</html>
